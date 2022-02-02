@@ -195,6 +195,7 @@ input.rounded:focus {
 .main-content h3 {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
+  margin-left: 2rem;
 }
 
 .inside-main-grid {
@@ -207,12 +208,39 @@ input.rounded:focus {
 .main-grid-item {
   height: 200px;
   width: 500px;
-  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
   background-color: white;
+  border-left: 10px solid #7559c0;
 }
 
 .odd {
   margin-left: 3rem;
+}
+
+.inside-grid-item {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.inside-grid-item h4 {
+  margin: 0;
+}
+.inside-grid-item p {
+  margin-top: 0.2rem;
+}
+
+.inside-grid-icons {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: flex-end;
+}
+
+.inside-grid-icons p {
+  margin-left: 1.5rem;
 }
 
 /* RIGHT SIDE CONTENT */
@@ -222,16 +250,62 @@ input.rounded:focus {
   flex-direction: column;
 }
 
+.right-side-content h3 {
+  margin: 1.2rem 3.5rem 1rem 3.5rem;
+}
+
+.right-side-content h4 {
+  margin: 0.3rem 0rem 0.1rem 1rem;
+}
+
+.right-side-content p {
+  margin: 0rem 0rem 0rem 1rem;
+  font-size: 14px;
+}
+
 .right-side-top {
   width: 275px;
   height: 400px;
   background-color: white;
-  margin: 3.5rem;
+  margin: 0rem 3.5rem 3.5rem 3.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .right-side-bottom {
   height: 400px;
   width: 275px;
   background-color: white;
-  margin: 1rem 3.5rem;
+  margin: 0rem 3.5rem 1rem 3.5rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.right-side-bottom img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.right-side-bottom-inside {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.right-side-bottom-inside h5 {
+  margin: 0;
+}
+.right-side-bottom-inside p {
+  margin: 0;
 }
